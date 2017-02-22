@@ -4,3 +4,8 @@
         Initial Version with y_x_2_lat_lng() and
         lat_lng_2_y_x()
 
+0.02    2017-02-22
+
+        Make the Module an Exporter so that
+        y_x_2_lat_lng and lat_lng_2_y_x can
+        be exported.
