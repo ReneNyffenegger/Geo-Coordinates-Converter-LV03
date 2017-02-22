@@ -1,44 +1,55 @@
-package Geo::Coordinates::Converter::LV03;
 
-
-use 5.006;
-use strict;
-use warnings;
-
-use utf8;
- #_{
+ #_{ Encoding and name
 =encoding utf8
 =head1 NAME
 
 Geo::Coordinates::Converter::LV03 - Convert Swiss LV03 coordinates to WSG84 and vice versa
 
+=cut
+package Geo::Coordinates::Converter::LV03;
 
+
+use strict;
+use warnings;
+use utf8;
+ #_}
+ #_{ Version
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
-
-
+our $VERSION = '0.02';
+#_}
+ #_{ Synopsis
 =head1 SYNOPSIS
-
-
-Quick summary of what the module does.
 
     use Geo::Coordinates::Converter::LV03;
 
     my ($x, $y) = Geo::Coordinates::Converter::LV03::lat_lng_2_y_x($φ, $λ);
     my ($φ, $λ) = Geo::Coordinates::Converter::LV03::y_x_2_lat_lng($x, $y);
-
+   
+=cut
+ #_}
+ #_{ Export
 =head1 EXPORT
 
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+On request, C<lat_lng_2_y_x> and C<y_x_2_lat_lng> are exported:
+
+    use Geo::Coordinates::Converter::LV03 qw(lat_lng_2_y_x y_x_2_lat_lng);
+
+    my ($x, $y) = lat_lng_2_y_x($φ, $λ);
+    my ($φ, $λ) = y_x_2_lat_lng($x, $y);
 
 =head1 SUBROUTINES/METHODS
 =cut
+
+use Exporter qw(import);
+use vars qw(@ISA @EXPORT_OK);
+@ISA = 'Exporter';
+@EXPORT_OK = qw(lat_lng_2_y_x y_x_2_lat_lng);
+
  #_}
 
 sub lat_lng_2_y_x { #_{
@@ -138,7 +149,8 @@ the north-south axis by B<X>. Hence, the first argument is named C<y>, the secon
   return ($φ, $λ);
 
 } #_}
- #_{
+
+ #_{ Warning, Why etc
 
 =head1 WARNING
 
@@ -163,11 +175,11 @@ Please report any bugs or feature requests to C<bug-geo-coordinates-converter-lv
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Geo-Coordinates-Converter-LV03>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
 =head1 LINKS
 
-https://www.swisstopo.admin.ch/content/swisstopo-internet/de/online/calculation-services/_jcr_content/contentPar/tabs/items/dokumente_und_publik/tabPar/downloadlist/downloadItems/7_1467103072612.download/ch1903wgs84de.pdf
+L<https://www.swisstopo.admin.ch/content/swisstopo-internet/de/online/calculation-services/_jcr_content/contentPar/tabs/items/dokumente_und_publik/tabPar/downloadlist/downloadItems/7_1467103072612.download/ch1903wgs84de.pdf>
+
+L<github repository|https://github.com/ReneNyffenegger/Geo-Coordinates-Converter-LV03>
 
 
 =head1 LICENSE AND COPYRIGHT
