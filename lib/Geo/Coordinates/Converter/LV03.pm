@@ -185,9 +185,8 @@ René Nyffenegger, C<< <rene.nyffenegger at adp-gmbh.ch> >>
 
 L<https://www.swisstopo.admin.ch/content/swisstopo-internet/de/online/calculation-services/_jcr_content/contentPar/tabs/items/dokumente_und_publik/tabPar/downloadlist/downloadItems/7_1467103072612.download/ch1903wgs84de.pdf>
 
-L<github repository|https://github.com/ReneNyffenegger/Geo-Coordinates-Converter-LV03>
-
-Fabien Fivaz's L<< wgs84_to_lv03.pl|https://github.com/ffivaz/wgs84_to_lv03 >>.
+Fabien Fivaz's L<< wgs84_to_lv03.pl|https://github.com/ffivaz/wgs84_to_lv03 >>. Apparently, his script uses the online service at
+L<< http://geodesy.geo.admin.ch/reframe/ >> to convert the coordinates.
 
 =cut
 #_}
@@ -197,6 +196,13 @@ Fabien Fivaz's L<< wgs84_to_lv03.pl|https://github.com/ffivaz/wgs84_to_lv03 >>.
 Please report any bugs or feature requests to C<bug-geo-coordinates-converter-lv03 at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Geo-Coordinates-Converter-LV03>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
+
+=cut
+#_}
+#_{ Source code
+=head1 SOURCE CODE
+
+The source code is in a L<github repository|https://github.com/ReneNyffenegger/Geo-Coordinates-Converter-LV03>. Meaningful pull requests are welcome.
 
 =cut
 #_}
