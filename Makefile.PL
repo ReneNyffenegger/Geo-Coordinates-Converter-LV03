@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use 5.006;
 use strict;
 use warnings;
@@ -15,7 +16,7 @@ WriteMakefile(
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
     },
-    BUILD_REQUIRES => {
+    TEST_REQUIRES => {
         'Test::Simple' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

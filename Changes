@@ -9,3 +9,9 @@
         Make the Module an Exporter so that
         y_x_2_lat_lng and lat_lng_2_y_x can
         be exported.
+
+0.03    2017-09-02
+
+        POD: See also
+
+        Makefile.PL: chmod 775 / shebag
