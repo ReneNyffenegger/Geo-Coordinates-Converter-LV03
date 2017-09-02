@@ -1,0 +1,8 @@
+^.git
+\.swp$
+blib
+MANIFEST.bak
+Makefile
+Makefile.PL
+MYMETA.json
+MYMETA.yml

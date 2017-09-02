@@ -15,3 +15,5 @@
         POD: See also
 
         Makefile.PL: chmod 775 / shebag
+
+        Use MANIFEST.SKIP rather than ignore.txt

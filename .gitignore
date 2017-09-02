@@ -1,1 +1,8 @@
 *.swp
+blib
+pm_to_blib
+Makefile
+MYMETA.json
+MYMETA.yml
+MANIFEST.bak
+Geo-Coordinates-Converter-LV03-*.*.tar.gz
