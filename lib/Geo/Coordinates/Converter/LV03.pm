@@ -53,7 +53,6 @@ use vars qw(@ISA @EXPORT_OK);
 
 #_}
 #_{ Methods
-
 sub lat_lng_2_y_x { #_{
 #_{ POD
 
@@ -190,8 +189,12 @@ L<< http://geodesy.geo.admin.ch/reframe/ >> to convert the coordinates.
 
 =cut
 #_}
-#_{ Bugs
-=head1 BUGS
+#_{ Bugs and caveats
+=head1 BUGS AND CAVEATS
+
+The common order of using lattitude and longitude is first: lattitude, the longitude. lattitude goes in y-direction, longitude in x-direction. So,
+they're in a different order than the usually known C<X> then C<y>. More gravely is the fact, that the C<x> in L</lat_lng_2_y_x> and in
+L</y_x_2_lat_lng> is what usually is the C<y>, and vice versa. I should and might change that once. Then again, I might not find the time.
 
 Please report any bugs or feature requests to C<bug-geo-coordinates-converter-lv03 at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Geo-Coordinates-Converter-LV03>.  I will be notified, and then you'll
