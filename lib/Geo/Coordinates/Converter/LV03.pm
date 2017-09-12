@@ -184,6 +184,8 @@ René Nyffenegger, C<< <rene.nyffenegger at adp-gmbh.ch> >>
 
 L<https://www.swisstopo.admin.ch/content/swisstopo-internet/de/online/calculation-services/_jcr_content/contentPar/tabs/items/dokumente_und_publik/tabPar/downloadlist/downloadItems/7_1467103072612.download/ch1903wgs84de.pdf>
 
+L<< https://asciich.ch/wordpress/koordinatenumrechner-schweiz-international/ >>: A converter in javascript.
+
 Fabien Fivaz's L<< wgs84_to_lv03.pl|https://github.com/ffivaz/wgs84_to_lv03 >>. Apparently, his script uses the online service at
 L<< http://geodesy.geo.admin.ch/reframe/ >> to convert the coordinates.
 
