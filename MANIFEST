@@ -1,9 +1,7 @@
 Changes
 lib/Geo/Coordinates/Converter/LV03.pm
 MANIFEST
-MANIFEST.SKIP
 README
-README.md
 t/00-load.t
 t/01-conversions.t
 t/02-EXPORT.t

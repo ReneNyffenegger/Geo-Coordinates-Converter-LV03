@@ -2,6 +2,9 @@
 \.swp$
 blib
 MANIFEST.bak
+MANIFEST.SKIP
+\.tar\.gz$
+README.md$
 Makefile
 Makefile.PL
 MYMETA.json
